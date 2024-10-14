@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BINI P-Pop Dino Game</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="chowlong.css">
+</head>
+
+<body>
+    <nav class="nav-bar">
+        <a href="binigames.html" class="back-button">← Go Back</a>
+    </nav>
+    <audio src="video/Karera - BINI (Lyrics) _ _Wag mag-alala, buhay ay 'di karera_.mp3">Hi</audio>
+    <div class="container">
+        <h1 class="title">KARERA NI CHOWLONG!</h1>
+        <canvas id="gameCanvas" width="800" height="400"></canvas>
+        <button id="restartButton" class="btn">Restart</button>
+        <div id="scoreDisplay" class="score">Score: 0</div>
+    </div>
+
+    <script src="chowlong.js"></script>
+    <script>
+        window.addEventListener("DOMContentLoaded", event => {
+            const audio = document.querySelector("audio");
+            audio.volume = 0.1;
+            audio.play();
+        });
+
+    </script>
+</body>
+
+</html>

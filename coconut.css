@@ -1,0 +1,62 @@
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    background-color: #fce4ec; /* Light pink for a cute theme */
+}
+
+h1 {
+    color: #ff4081; /* BINI's signature pink color */
+}
+
+#gameArea {
+    position: relative;
+    width: 400px;
+    height: 600px;
+    background: url('object/coconutbg.png') no-repeat center center; /* Add your background image */
+    background-size: cover; /* Ensure the background image covers the entire area */
+    border: 3px solid #ff4081;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+
+#player {
+    width: 50px; /* Adjust size as necessary */
+    height: 50px; /* Adjust size as necessary */
+    position: absolute;
+
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-image: url('object/Strawberry_Maloi-removebg-preview.png'); /* Replace with your character image */
+    background-size: cover;
+    background-position: center;
+}
+
+#item {
+    position: absolute;
+    width: 40px; /* Adjust size as necessary */
+    height: 40px; /* Adjust size as necessary */
+    background-image: url('object/coconut-removebg-preview.png'); /* Replace with your item image */
+    background-size: cover;
+    background-position: center;
+    top: -50px;
+}
+
+#obstacle {
+    position: absolute;
+    width: 40px; /* Adjust size as necessary */
+    height: 40px; /* Adjust size as necessary */
+    background-image: url('object/poop-removebg-preview.png'); /* Replace with your obstacle image */
+    background-size: cover;
+    background-position: center;
+    top: -50px;
+}
+
+#score {
+    font-size: 24px;
+    color: #2196f3;
+    margin-top: 10px;
+}

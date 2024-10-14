@@ -1,0 +1,140 @@
+html{
+  scroll-behavior: smooth;
+}
+body {
+  font-family: 'Quicksand', sans-serif;
+  color: #333;
+  background-color: #fef9f7;
+}
+.navbar {
+  background: linear-gradient(45deg, #ff8a80, #ffab91);
+  border-bottom: 2px solid #ff6e6e;
+}
+.navbar-brand {
+  font-family: 'Pacifico', cursive;
+  color: #fff !important;
+}
+.nav-link {
+  color: #fff !important;
+  font-weight: 500;
+}
+.nav-link:hover {
+  color: #ffd54f !important;
+}
+.carousel-item img {
+  border-radius: 15px;
+}
+#slideshow {
+  position: relative;
+  max-height: 500px;
+}
+#background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+.bini-section, .gallery-section {
+  background-color: #ffe0b2;
+  padding: 40px 20px;
+  border-radius: 15px;
+}
+.bini-section h4, .gallery-section h4 {
+  color: #ff6e6e;
+  font-family: 'Pacifico', cursive;
+  margin: 10px;
+}
+.bini-section p, .gallery-section p {
+  color: #ff8a80;
+}
+.container p{
+  font-size: 20px;
+}
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  background-color: #ff6e6e;
+  border-radius: 50%;
+}
+.carousel-control-prev-icon:hover, .carousel-control-next-icon:hover {
+  background-color: #ff8a80;
+}
+/* Slideshow Section Styling */
+.slideshow-container {
+  width: 50%; /* Slideshow takes up 50% of the screen width */
+  max-width: 300px;
+  margin-right: 50px; /* Add space from the right edge */
+  background-color: rgba(255, 255, 255, 0.1); /* Transparent background */
+  backdrop-filter: blur(10px); /* Frosted glass effect */
+  padding: 10px;
+  border: 5px solid #ff4081; /* Cool border */
+  border-radius: 15px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+  margin-top: 70px;
+}
+video{
+  border-radius: 20px;
+  border-color: #ff8a80;
+}
+ .cute {
+  font-family: 'Comic Sans MS', 'Comic Sans', cursive; /* A playful font */
+  font-size: 1.8rem; /* Increase the size */
+  color: #ff66b2; /* Soft pink color */
+  background-color: #fff0f6; /* Light pink background */
+  padding: 10px 15px; /* Add some padding */
+  border: 2px solid #ff99cc; /* Pink border */
+  border-radius: 10px; /* Rounded corners */
+  text-align: center; /* Center the text */
+  box-shadow: 0 4px 6px rgba(255, 153, 204, 0.4); /* Add a soft shadow */
+  display: inline-block; /* Make it inline to hug content */
+  margin-top: 10px; /* Add some space at the top */
+  transition: transform 0.3s ease, background-color 0.3s ease; /* Smooth animation */
+}
+
+.cute:hover {
+  background-color: #ffb3d9; /* Darker pink when hovered */
+  transform: scale(1.05); /* Slightly grow when hovered */
+}
+/* Style for the gallery title */
+.gallery-title {
+  font-family: 'Poppins', sans-serif; /* Stylish font */
+  color: #ff66b2; /* Soft pastel pink */
+  font-size: 2.5rem; /* Bigger font for title */
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+/* Style for the gallery images */
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%; /* Keeps the rounded-circle style */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-color: #fef9f7;
+}
+
+/* Image hover effect */
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item:hover {
+  transform: scale(1.1); /* Slight zoom on hover */
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+.gallery-item img:hover {
+  transform: scale(1.2); /* Further zoom on the image */
+}
+
+/* Responsive design */
+@media (max-width: 600) {
+  .gallery-item img {
+    width: 60%;
+    margin: 0 auto;
+  }
+}

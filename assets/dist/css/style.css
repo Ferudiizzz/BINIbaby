@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+}
+.wright-box-container{
+    display: flex;
+    flex-grow: inherit;
+}
+.left-box {
+
+    background-color: darkblue;
+    height: 100vh;
+    width: 50vh;
+}
+.right-box {
+   
+    background-color: blueviolet;
+    height: 100vh;
+    width: 50vh;
+}

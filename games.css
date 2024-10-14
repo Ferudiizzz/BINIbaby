@@ -1,0 +1,96 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #ffe6f2; /* Soft pink background */
+    font-family: 'Poppins', sans-serif;
+}
+
+.game-title {
+    font-size: 2.5rem;
+    color: #ff66b2; /* Cute pink title */
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.game-container {
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    font-family: 'Pacifico', cursive;
+    flex-direction: column;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+/* Cute memory card style */
+.memory-card {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    cursor: pointer;
+    transform-style: preserve-3d;
+    transition: transform 0.6s ease-in-out; /* Smoother card flip animation */
+    border-radius: 15px; /* Rounded corners for a cute look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(255, 182, 193, 0.5); /* Shadow for depth */
+    border: 3px solid #ffb6c1; /* Cute pink border */
+}
+
+.memory-card.flip {
+    transform: rotateY(180deg);
+}
+
+.memory-card img {
+    width: 100%;
+    height: 100%;
+    border-radius: 12px; /* Smaller radius for the inner images */
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+/* Front face style */
+.front-face {
+    transform: rotateY(180deg);
+    border: 3px solid #ffcce0; /* Lighter pink border for the front */
+}
+
+/* Back face style */
+.back-face {
+    background-color: #ffe6f2; /* Soft pastel pink color for the back face */
+    border-radius: 12px;
+}
+
+/* Style for the navigation bar */
+
+/* Style for the navigation bar */
+.nav-bar {
+    position: fixed; /* Sticks the button to the top of the page */
+    top: 0; /* Aligns it to the top */
+    left: 0; /* Aligns it to the left */
+    width: 100%; /* Makes it stretch across the width of the screen */
+    background: linear-gradient(45deg, #ff8a80, #ffab91); /* Optional: background color to make the button stand out */
+    padding: 10px 20px; /* Padding around the button */
+    z-index: 1000; /* Ensures it's always on top */
+}
+
+.back-button {
+    text-decoration: none;
+     background: linear-gradient(45deg, #ff8a80, #ffab91);
+    color: white;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+}
+
+.back-button:hover {
+    color: #ffd54f !important;
+}
+
+

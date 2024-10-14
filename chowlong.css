@@ -1,0 +1,74 @@
+body {
+    background-color: #f9f3f6; /* Light background color */
+    font-family: 'Poppins', sans-serif; /* Cute and modern font */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+}
+
+.title {
+    font-family: 'Pacifico', cursive; /* Stylish font for the title */
+    font-size: 3rem; /* Title size */
+    color: #FF6F61; /* Cute pink color */
+    margin-bottom: 20px; /* Spacing below the title */
+}
+
+#gameCanvas {
+    border: 5px solid #FF6F61; /* Pink border around the canvas */
+    border-radius: 10px; /* Rounded corners */
+    background-color: #e0f7fa; /* Light aqua background for the canvas */
+}
+
+.btn {
+    background-color: #FF6F61; /* Button background color */
+    color: white; /* Button text color */
+    font-size: 1.5rem; /* Button text size */
+    padding: 10px 20px; /* Button padding */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded button corners */
+    cursor: pointer; /* Pointer on hover */
+    transition: background-color 0.3s; /* Smooth background color transition */
+    margin-top: 20px; /* Space above the button */
+}
+
+.btn:hover {
+    background-color: #ff4a3d; /* Darker shade on hover */
+}
+
+.score {
+    font-size: 1.5rem; /* Score text size */
+    margin-top: 10px; /* Spacing above the score */
+    color: #3E1A47; /* Darker text color for contrast */
+    font-weight: 500; /* Medium font weight */
+}
+.nav-bar {
+    position: fixed; /* Sticks the button to the top of the page */
+    top: 0; /* Aligns it to the top */
+    left: 0; /* Aligns it to the left */
+    width: 100%; /* Makes it stretch across the width of the screen */
+    background: linear-gradient(45deg, #ff8a80, #ffab91); /* Optional: background color to make the button stand out */
+    padding: 10px 20px; /* Padding around the button */
+    z-index: 1000; /* Ensures it's always on top */
+}
+
+.back-button {
+    text-decoration: none;
+     background: linear-gradient(45deg, #ff8a80, #ffab91);
+    color: white;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+}
+
+.back-button:hover {
+    color: #ffd54f !important;
+}
